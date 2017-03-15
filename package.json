@@ -2,6 +2,7 @@
   "name": "sudoku",
   "version": "0.1.0",
   "description": "Sudoku implementation on React",
+  "repository": "https://github.com/Kirillpryanikov/sudoku",
   "scripts": {
     "serve": "node dev_server.js",
     "build": "node_modules/.bin/webpack"
