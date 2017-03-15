@@ -10,11 +10,6 @@ module.exports = createStore(function(state, action) {
 	} else {
 		state = cloneDeep(state);
 	}
-
-	if (state.game) {
-		Sudoku.checkConflicts(state.game.cells);
-		localStorage.currentGame = JSON.stringify(state.game);
-	}
 	
 	switch (action.type) {
 		case 'RESUME_GAME':
@@ -33,6 +28,11 @@ module.exports = createStore(function(state, action) {
 			}
 			break;
 	}
-	
+
+    if (state.game) {
+        Sudoku.checkConflicts(state.game.cells);
+        localStorage.currentGame = JSON.stringify(state.game);
+    }
+
 	return state;
 });
