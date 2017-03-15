@@ -1,0 +1,27 @@
+{
+  "name": "sudoku",
+  "version": "0.1.0",
+  "description": "Sudoku implementation on React",
+  "scripts": {
+    "serve": "node dev_server.js",
+    "build": "node_modules/.bin/webpack"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^2.0.0",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  }
+}
